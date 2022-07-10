@@ -24,6 +24,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="didEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Yl4-wO-8qq"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBS-zh-lpH">
                                         <rect key="frame" x="326" y="0.0" width="48" height="48"/>
@@ -32,6 +35,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title="Button"/>
+                                        <connections>
+                                            <action selector="searchButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBq-kO-flu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -73,7 +79,10 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHn-tw-ZNU">
-                                <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                                <rect key="frame" x="186.5" y="442.5" width="41.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="leA-bD-8hU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,6 +90,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="lHP-z1-lfj" firstAttribute="centerY" secondItem="Vfu-Aw-Yfa" secondAttribute="centerY" id="3rS-2H-oPg"/>
                             <constraint firstItem="JHn-tw-ZNU" firstAttribute="centerX" secondItem="P87-Q4-tvk" secondAttribute="centerX" id="4Oh-7m-QIc"/>
@@ -101,6 +111,9 @@
                             <constraint firstItem="43y-xJ-NTs" firstAttribute="leading" secondItem="lHP-z1-lfj" secondAttribute="trailing" constant="8" id="vVK-XT-xa1"/>
                             <constraint firstItem="Vfu-Aw-Yfa" firstAttribute="leading" secondItem="twi-qw-bl0" secondAttribute="leading" id="wpa-GD-2g6"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uz9-Gr-0gL" appends="YES" id="M6W-fJ-zbj"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="resultFrameImageView" destination="P87-Q4-tvk" id="TQj-kN-g4B"/>
@@ -108,13 +121,18 @@
                         <outlet property="searchBarView" destination="xwp-Vr-zBP" id="RWu-wU-kP9"/>
                         <outlet property="searchButton" destination="DBS-zh-lpH" id="nKH-wl-URD"/>
                         <outlet property="searchTextField" destination="twi-qw-bl0" id="6WN-68-dpr"/>
-                        <outletCollection property="searchTagButtonCollection" destination="Vfu-Aw-Yfa" collectionClass="NSMutableArray" id="QSj-zf-7T0"/>
-                        <outletCollection property="searchTagButtonCollection" destination="hh4-Fd-riM" collectionClass="NSMutableArray" id="zmj-T6-5dJ"/>
-                        <outletCollection property="searchTagButtonCollection" destination="lHP-z1-lfj" collectionClass="NSMutableArray" id="OrT-ia-lCj"/>
-                        <outletCollection property="searchTagButtonCollection" destination="43y-xJ-NTs" collectionClass="NSMutableArray" id="gHh-KV-jSv"/>
+                        <outletCollection property="searchHistoryTagButtonCollection" destination="Vfu-Aw-Yfa" collectionClass="NSMutableArray" id="QSj-zf-7T0"/>
+                        <outletCollection property="searchHistoryTagButtonCollection" destination="hh4-Fd-riM" collectionClass="NSMutableArray" id="zmj-T6-5dJ"/>
+                        <outletCollection property="searchHistoryTagButtonCollection" destination="lHP-z1-lfj" collectionClass="NSMutableArray" id="OrT-ia-lCj"/>
+                        <outletCollection property="searchHistoryTagButtonCollection" destination="43y-xJ-NTs" collectionClass="NSMutableArray" id="gHh-KV-jSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uz9-Gr-0gL">
+                    <connections>
+                        <action selector="tapGestureClicked:" destination="BYZ-38-t0r" id="YJx-06-SyW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="71.651785714285708"/>
         </scene>
