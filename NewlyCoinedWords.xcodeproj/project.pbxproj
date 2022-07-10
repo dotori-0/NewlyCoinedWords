@@ -13,6 +13,7 @@
 		0A360A72287AC44800C61DC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A360A70287AC44800C61DC6 /* Main.storyboard */; };
 		0A360A74287AC44B00C61DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A360A73287AC44B00C61DC6 /* Assets.xcassets */; };
 		0A360A77287AC44B00C61DC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A360A75287AC44B00C61DC6 /* LaunchScreen.storyboard */; };
+		0A8A528D287ACD9F00922149 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A528C287ACD9F00922149 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0A360A73287AC44B00C61DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A360A76287AC44B00C61DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A360A78287AC44B00C61DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8A528C287ACD9F00922149 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0A360A6C287AC44800C61DC6 /* SceneDelegate.swift */,
 				0A360A6E287AC44800C61DC6 /* ViewController.swift */,
 				0A360A70287AC44800C61DC6 /* Main.storyboard */,
+				0A8A528C287ACD9F00922149 /* SearchViewController.swift */,
 				0A360A73287AC44B00C61DC6 /* Assets.xcassets */,
 				0A360A75287AC44B00C61DC6 /* LaunchScreen.storyboard */,
 				0A360A78287AC44B00C61DC6 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				0A360A6F287AC44800C61DC6 /* ViewController.swift in Sources */,
 				0A360A6B287AC44800C61DC6 /* AppDelegate.swift in Sources */,
+				0A8A528D287ACD9F00922149 /* SearchViewController.swift in Sources */,
 				0A360A6D287AC44800C61DC6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -294,6 +299,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -321,6 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
